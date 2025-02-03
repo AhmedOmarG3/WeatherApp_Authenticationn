@@ -43,9 +43,11 @@ Users enter their email and password to access the app.
 ![Uploading login.jpg…]()
 
 
+
 2. Sign Up Screen
 
 New users create an account by providing their details.
+
 ![Uploading Registerjpg.jpg…]()
 
 
