@@ -39,8 +39,7 @@ Screens Overview
 1. Sign In Screen
 
 Users enter their email and password to access the app.
-
-![Uploading login.png…]()
+![login](https://github.com/user-attachments/assets/eaee9711-a48f-4f3f-94cc-eb27ee510f17)
 
 
 
@@ -48,8 +47,8 @@ Users enter their email and password to access the app.
 2. Sign Up Screen
 
 New users create an account by providing their details.
+![Registerjpg](https://github.com/user-attachments/assets/4ab590eb-64d6-46d3-aaf0-5e1c8bcdd569)
 
-![Uploading Registerjpg.jpg…]()
 
 
 3. Forgot Password Screen
@@ -73,13 +72,16 @@ Displays the main interface with weather summaries and navigation options.
 6. Search City Screen
 
 Users search for a city's weather details.
-![Uploading searchjpg.jpg…]()
+![searchjpg](https://github.com/user-attachments/assets/0b30df99-6b4d-4922-8d4d-71023ce893ff)
+
 
 
 7. Info View
 
 Displays detailed weather information for a selected city.
 ![Uploading info.jpg…]()
+
+
 
 
 8. Error View
