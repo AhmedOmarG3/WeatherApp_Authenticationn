@@ -79,7 +79,8 @@ Users search for a city's weather details.
 7. Info View
 
 Displays detailed weather information for a selected city.
-![Uploading info.jpg…]()
+![info](https://github.com/user-attachments/assets/f82bceb5-5af1-4b1b-8446-b0c15978b830)
+
 
 
 
