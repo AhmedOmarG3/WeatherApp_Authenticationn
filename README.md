@@ -40,7 +40,8 @@ Screens Overview
 
 Users enter their email and password to access the app.
 
-![Uploading login.jpg…]()
+![Uploading login.png…]()
+
 
 
 
