@@ -17,7 +17,7 @@ class RegisterScreen extends StatefulWidget {
 class _RegisterScreenState extends State<RegisterScreen> {
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
-  // المتغيرات لتخزين المدخلات من المستخدم
+  
   String name = '';
   String username = ''; // This is email
   String password = '';
@@ -25,15 +25,15 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
   final _formKey = GlobalKey<FormState>();  // Add form key for validation
 
-  // دالة للتسجيل في Firebase باستخدام البريد الإلكتروني وكلمة المرور
+
   Future<void> register() async {
   if (_formKey.currentState!.validate()) {  // Validate all fields
     if (password == confirmPassword) {
       try {
-        // محاولة تسجيل المستخدم في Firebase
+        
         await _auth.createUserWithEmailAndPassword(email: username, password: password);
         
-        // بعد التسجيل بنجاح، انتقل إلى شاشة OTP
+      
         if (mounted) {
           Navigator.pushReplacement(
             context,
@@ -42,7 +42,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
         }
       } catch (e) {
         print('Error: $e');
-        // عرض رسالة خطأ للمستخدم في حالة حدوث مشكلة
+        
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(content: Text('Failed to register: $e')),
@@ -50,7 +50,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
         }
       }
     } else {
-      // لو الباسورد مش متطابق، اعرض رسالة للمستخدم
+      
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Passwords do not match')),
@@ -118,7 +118,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
                 CustomButton(
                   text: 'Register',
-                  onTap: register,  // استخدام الدالة الخاصة بالتسجيل هنا
+                  onTap: register,  
                 ),
                 SizedBox(
                   height: 5,
