@@ -4,7 +4,7 @@ import 'package:auth_ui/widgets/customCircle.dart';
 import 'package:auth_ui/widgets/customTextField.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'login_screen.dart'; // صفحة تسجيل الدخول
+import 'login_screen.dart'; 
 
 class EmailScreen extends StatefulWidget {
   const EmailScreen({super.key});
@@ -23,18 +23,18 @@ class _EmailScreenState extends State<EmailScreen> {
       try {
         await _auth.sendPasswordResetEmail(email: email);
 
-        // عرض رسالة تأكيد للمستخدم
+      
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('Reset link sent! Check your email.')),
         );
 
-        // الانتظار لثانيتين ثم الانتقال إلى صفحة اللوجين
+        
         Future.delayed(const Duration(seconds: 2), () {
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
                 builder: (context) =>
-                    LoginScreen()), // تحويل لصفحة تسجيل الدخول
+                    LoginScreen()), 
           );
         });
       } catch (e) {
